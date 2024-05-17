@@ -1,0 +1,171 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-weight: 500;
+  src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin-500.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin-700.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2'),
+    url('../fonts/play-v19-latin-700.woff') format('woff');
+}
+
+/*Main Section*/
+:root {
+  --color-text-main: #011c44;
+  --color-text-accent: #2b7fff;
+  --color-text-info: #4a4a4a;
+  --color-text-light-info: #747272;
+  --color-light: #fff;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  color: var(--color-text-main);
+  font-weight: 400;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  background-color: var(--color-text-accent);
+  border: 2px solid var(--color-text-accent);
+  border-radius: 32px;
+  color: var(--color-light);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 117.166667%; /* 21.09/18 */
+}
+button:hover {
+  background-color: transparent;
+  color: var(--color-text-main);
+}
+address {
+  font-style: normal;
+}
+
+/*header*/
+.menu-item {
+  font-size: 18px;
+  line-height: 116.666667%; /* 21/18 */
+  color: var(--color-text-main);
+}
+.menu-item:hover {
+  color: var(--color-text-accent);
+  font-weight: 700;
+}
+/*Hero Section*/
+.hero-label {
+  font-size: 18px;
+  line-height: 116.666667%; /* 21/18 */
+}
+.horo-title {
+  font-size: 140px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--color-text-accent);
+  line-height: 81.428571%; /* 114/140 */
+  font-family: 'play', sans-serif;
+}
+.hero-text {
+  color: var(--color-text-info);
+  font-size: 12px;
+}
+
+/*reintest section*/
+
+.title {
+  font-family: 'play', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 115.625%; /* 74/64 */
+}
+.accent {
+  color: var(--color-text-accent);
+}
+.reintest-title .accent {
+  text-transform: capitalize;
+}
+.reintest-text {
+  line-height: 172.727273%; /* 38/22 */
+}
+.reintest-text-accent {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+/*advantages section*/
+
+.advantages-list {
+  font-size: 18px;
+  line-height: 133.333333%; /* 24/18 */
+}
+
+/*procedures section*/
+.procedure-title {
+  line-height: 118.181818%; /* 26/22 */
+  color: var(--color-light);
+}
+
+/*contact section*/
+.contact-text {
+  color: var(--color-light);
+}
+.contact-text-info {
+  color: var(--color-text-light-info);
+  font-size: 12px;
+  line-height: 150%; /* 18/12 */
+}
+.contact-text-info-link {
+  color: var(--color-text-light-info);
+  text-decoration: underline;
+}
+.contact-text-info-link:hover {
+  color: var(--color-text-accent);
+}
+.contact-block {
+  background-color: var(--color-text-main);
+}
+.contact-button:hover {
+  color: var(--color-light);
+}
+
+/*footer*/
+.footer-item {
+  font-size: 16px;
+  line-height: 117.1875%; /* 18.75/16 */
+  color: var(--color-light);
+}
+.footer-item:hover {
+  color: var(--color-text-accent);
+  font-weight: 700;
+}
+.footer-copy {
+  color: var(--color-text-light-info);
+  font-size: 13px;
+  line-height: 117.153846%; /* 15.23/13 */
+}
+footer {
+  background-color: var(--color-text-main);
+}
