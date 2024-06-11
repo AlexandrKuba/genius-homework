@@ -522,6 +522,8 @@ address {
   color: var(--color-text-accent);
 }
 .contact-contant {
+  background: url('../images/modal-bg.png');
+  background-size: cover;
   background-color: var(--color-text-main);
   padding: 48px 56px;
   box-sizing: border-box;
@@ -564,6 +566,8 @@ address {
   line-height: 117.153846%; /* 15.23/13 */
 }
 .footer {
+  background: url('../images/footer-bg.png');
+  background-size: cover;
   background-color: var(--color-text-main);
   position: relative;
 }
@@ -636,6 +640,8 @@ address {
 .modal {
   position: relative;
   box-sizing: border-box;
+  background: url('../images/modal-bg.png');
+  background-size: cover;
   background-color: var(--color-text-main);
   padding: 42px 144px;
   max-width: 723px;
