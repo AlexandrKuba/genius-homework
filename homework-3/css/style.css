@@ -345,6 +345,7 @@ address {
 .reintest-content {
   flex-basis: calc(100% - 532px);
   padding-right: 32px;
+  margin-top: 40px;
 }
 .reintest-picture {
   flex-basis: 500px;
