@@ -340,11 +340,11 @@ address {
 }
 .reintest-container {
   display: flex;
-  column-gap: 32px;
   position: relative;
 }
 .reintest-content {
   flex-basis: calc(100% - 532px);
+  padding-right: 32px;
 }
 .reintest-picture {
   flex-basis: 500px;
