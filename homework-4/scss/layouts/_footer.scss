@@ -1,0 +1,111 @@
+.footer {
+  background-image: url('../images/footer-bg.png');
+  background-size: cover;
+  background-color: var(--color-text-main);
+  position: relative;
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/footer-bg@2x.png');
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px 10px;
+    padding: 32px 0;
+    align-items: center;
+    text-align: center;
+    @media screen and (min-width: $bp-tablet) {
+      padding: 56px 0;
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: left;
+    }
+    .menu-footer {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      flex-basis: calc(45% - 5px);
+      gap: 42px 10px;
+      text-align: center;
+      @media screen and (min-width: $bp-tablet) {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        text-align: left;
+        flex-basis: calc(45% - 5px);
+      }
+      @media screen and (min-width: $bp-desktop) {
+        flex-basis: calc(50% - 5px);
+      }
+      &__item {
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+      }
+      &__list {
+        min-width: 130px;
+        flex-basis: calc(50% - 5px);
+      }
+    }
+    .address {
+      flex-basis: calc(55% - 5px);
+      display: flex;
+      justify-content: space-between;
+      column-gap: 10px;
+      @media screen and (min-width: $bp-tablet) {
+        flex-basis: calc(55% - 5px);
+      }
+      @media screen and (min-width: $bp-desktop) {
+        flex-basis: calc(50% - 5px);
+      }
+      &__content {
+        display: none;
+        @media screen and (min-width: $bp-tablet) {
+          display: block;
+        }
+      }
+      &__body {
+        width: 192px;
+      }
+      &__list {
+        > * {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+  &__bg-image {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  &__link {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 117.1875%; /* 18.75/16 */
+    color: var(--color-light);
+    transition: color 0.2s;
+    &:hover {
+      color: var(--color-text-accent);
+    }
+  }
+
+  &__copyright {
+    > *:not(:last-child) {
+      margin-bottom: 16px;
+    }
+    & .social-icons {
+      margin-bottom: 8px;
+    }
+  }
+  &__copy {
+    color: var(--color-text-light-info);
+    font-size: 13px;
+    line-height: 117.153846%; /* 15.23/13 */
+  }
+}

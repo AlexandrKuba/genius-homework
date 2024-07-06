@@ -1,0 +1,129 @@
+.procedures {
+  &__container {
+    overflow: hidden;
+  }
+  &__list {
+    margin-bottom: 32px;
+  }
+  &__title {
+    line-height: 118.181818%; /* 26/22 */
+    color: var(--color-light);
+    max-width: 150px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    width: 100%;
+    height: 456px;
+    border-radius: 4px 120px;
+    &.injections {
+      background-image: linear-gradient(
+          180.05deg,
+          rgba(1, 28, 68, 0) 48.53%,
+          rgba(1, 28, 68, 0.725825) 84.61%,
+          #011c44 101.39%
+        ),
+        url('../images/Injections.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            180.05deg,
+            rgba(1, 28, 68, 0) 48.53%,
+            rgba(1, 28, 68, 0.725825) 84.61%,
+            #011c44 101.39%
+          ),
+          url('../images/Injections@2x.jpg');
+      }
+    }
+    &.cleaning {
+      background-image: linear-gradient(
+          180.05deg,
+          rgba(1, 28, 68, 0) 48.53%,
+          rgba(1, 28, 68, 0.725825) 84.61%,
+          #011c44 101.39%
+        ),
+        url('../images/Cleansing.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            180.05deg,
+            rgba(1, 28, 68, 0) 48.53%,
+            rgba(1, 28, 68, 0.725825) 84.61%,
+            #011c44 101.39%
+          ),
+          url('../images/Cleansing@2x.jpg');
+      }
+    }
+    &.masks {
+      background-image: linear-gradient(
+          180.05deg,
+          rgba(1, 28, 68, 0) 48.53%,
+          rgba(1, 28, 68, 0.725825) 84.61%,
+          #011c44 101.39%
+        ),
+        url('../images/Masks.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            180.05deg,
+            rgba(1, 28, 68, 0) 48.53%,
+            rgba(1, 28, 68, 0.725825) 84.61%,
+            #011c44 101.39%
+          ),
+          url('../images/Masks@2x.jpg');
+      }
+    }
+  }
+  &__body {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  &__button {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid var(--color-text-main);
+      background-color: transparent;
+      transition: background-color 0.2s, border 0.2s;
+    }
+    &:hover {
+      background-color: var(--color-text-accent);
+      border: 1px solid var(--color-light);
+      .procedures__arrow {
+        fill: var(--color-light);
+      }
+    }
+  }
+  &__arrow {
+    fill: var(--color-text-main);
+    width: 16.76px;
+    height: 16.76px;
+    transition: fill 0.2s;
+    &--right {
+      width: 500px;
+      transform: rotate(180deg);
+    }
+  }
+}

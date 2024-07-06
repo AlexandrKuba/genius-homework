@@ -1,0 +1,132 @@
+.stars {
+  &__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    @media screen and (min-width: $bp-desktop) {
+      top: 0;
+    }
+    &--first {
+      display: block;
+      animation-name: star1-mobile;
+      animation-duration: 1.1s;
+      animation-iteration-count: infinite;
+      margin: 0 2px 0 0;
+      transform: translateY(46px);
+      width: 40px;
+      @media screen and (min-width: $bp-desktop) {
+        display: block;
+        margin: 336px 295px 0 0;
+        animation-name: star1;
+        width: 64px;
+      }
+    }
+    &--second {
+      display: none;
+      @media screen and (min-width: $bp-desktop) {
+        display: block;
+        margin: 270px 6px 0 0;
+        animation-name: star2;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+      }
+    }
+    &--third {
+      display: none;
+      @media screen and (min-width: $bp-desktop) {
+        display: block;
+        margin-top: 32px;
+        animation-name: star3;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        width: 40px;
+      }
+    }
+  }
+}
+@keyframes star1 {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes star1-mobile {
+  0% {
+    transform: scale(1) translateY(46px);
+  }
+  20% {
+    transform: scale(1) translateY(46px);
+  }
+  40% {
+    transform: scale(1.2) translateY(46px);
+  }
+  60% {
+    transform: scale(1) translateY(46px);
+  }
+  80% {
+    transform: scale(1.2) translateY(46px);
+  }
+  100% {
+    transform: scale(1) translateY(46px);
+  }
+}
+@keyframes star2 {
+  0% {
+    transform: translate(0px) rotate(0deg) scale(1);
+  }
+  12.5% {
+    transform: translate(-12.5px, -37.5px) rotate(90deg) scale(1.3);
+  }
+  25% {
+    transform: translate(-50px, -50px) rotate(180deg) scale(1);
+  }
+  37.5% {
+    transform: translate(-87.5px, -37.5px) rotate(270deg) scale(1.3);
+  }
+  50% {
+    transform: translate(-100px, 0px) rotate(360deg) scale(1);
+  }
+  62.5% {
+    transform: translate(-87.5px, 37.5px) rotate(450deg) scale(1.3);
+  }
+  75% {
+    transform: translate(-50px, 50px) rotate(540deg) scale(1);
+  }
+  87.5% {
+    transform: translate(-12.5px, 37.5px) rotate(630deg) scale(1.3);
+  }
+  100% {
+    transform: translate(0px) rotate(720deg) scale(1);
+  }
+}
+@keyframes star3 {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.2);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  80% {
+    transform: scale(1);
+  }
+}

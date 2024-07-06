@@ -1,0 +1,99 @@
+.hero {
+  &__label {
+    font-size: 12px;
+    line-height: 116.666667%; /* 21/18 */
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 18px;
+      line-height: 150%; /* 18/12 */
+      margin-bottom: 16px;
+    }
+  }
+  &__title {
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--color-text-accent);
+    font-family: 'play', sans-serif;
+    line-height: 85.185185%; /* 46/54 */
+    max-width: 529px;
+    margin-bottom: 32px;
+    text-align: center;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 140px;
+      line-height: 81.428571%; /* 114/140 */
+      margin-bottom: 40px;
+      text-align: left;
+    }
+  }
+  &__text {
+    color: var(--color-text-info);
+    font-size: 11px;
+    max-width: 238px;
+    text-align: center;
+    line-height: 163.636364%; /* 18/11 */
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 12px;
+      line-height: 150%; /* 18/12 */
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 56px;
+    @media screen and (min-width: $bp-tablet) {
+      padding-left: 106px;
+      padding-bottom: 126px;
+      padding-top: 126px;
+      align-items: flex-start;
+    }
+  }
+  &__button {
+    margin-bottom: 8px;
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 16px;
+    }
+  }
+  &__body {
+    background: linear-gradient(
+        56.68deg,
+        #ffffff 20.92%,
+        rgba(255, 255, 255, 0.78) 44.46%,
+        rgba(255, 255, 255, 0.2) 58.9%,
+        rgba(255, 255, 255, 0) 72.45%
+      ),
+      url('../images/bghero.jpg') no-repeat bottom center;
+    background-size: cover;
+    @media screen and (min-width: $bp-tablet) {
+      background-position: top right;
+      background-size: contain;
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: linear-gradient(
+          56.68deg,
+          #ffffff 20.92%,
+          rgba(255, 255, 255, 0.78) 44.46%,
+          rgba(255, 255, 255, 0.2) 58.9%,
+          rgba(255, 255, 255, 0) 72.45%
+        ),
+        url('../images/bghero@2x.jpg') no-repeat bottom center;
+      background-size: cover;
+    }
+    @media screen and (min-width: $bp-tablet) and (min-device-pixel-ratio: 2),
+      screen and (min-width: $bp-tablet) and (min-resolution: 192dpi),
+      screen and (min-width: $bp-tablet) and (min-resolution: 2dppx) {
+      background: linear-gradient(
+          89.38deg,
+          #ffffff 30.62%,
+          rgba(255, 255, 255, 0.850898) 41.31%,
+          rgba(255, 255, 255, 0.193204) 58.65%,
+          rgba(255, 255, 255, 0) 72.78%
+        ),
+        url('../images/bghero@2x.jpg') no-repeat top right;
+      background-size: contain;
+    }
+  }
+}

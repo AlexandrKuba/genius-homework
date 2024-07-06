@@ -1,0 +1,83 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+.modal {
+  position: relative;
+  box-sizing: border-box;
+  background-image: url('../images/modal-bg.png');
+  background-color: var(--color-text-main);
+  padding: 42px 24px;
+  max-width: 723px;
+  max-height: 683px;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  border-radius: 48px;
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/modal-bg@2x.png');
+  }
+  @media screen and (min-width: $bp-tablet) {
+    padding: 42px 144px;
+  }
+  &__button-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    margin: 30px 30px 0 0;
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    cursor: pointer;
+    @media screen and (min-width: $bp-tablet) {
+      margin: 50px 50px 0 0;
+    }
+    &::before,
+    &::after {
+      margin-left: 1px;
+      position: absolute;
+      content: '';
+      display: block;
+      height: 2px;
+      width: 20px;
+      background-color: var(--color-light);
+      transform-origin: left;
+    }
+    &::before {
+      transform: rotate(45deg);
+      top: 0;
+    }
+    &::after {
+      transform: rotate(-45deg);
+      bottom: 0;
+    }
+  }
+  &__title {
+    color: var(--color-light);
+    font-family: 'Play', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    max-width: 320px;
+    margin: 0 auto 24px;
+    @media screen and (min-width: $bp-mobile) {
+      font-size: 56px;
+    }
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 64px;
+      margin-bottom: 40px;
+    }
+  }
+}

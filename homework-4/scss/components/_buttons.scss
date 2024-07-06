@@ -1,0 +1,21 @@
+.button {
+  background-color: var(--color-text-accent);
+  border: 2px solid var(--color-text-accent);
+  border-radius: 32px;
+  color: var(--color-light);
+  font-family: 'Roboto';
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 117.166667%; /* 21.09/18 */
+  padding: 12.5px 24px;
+  transition: background-color 0.2s, color 0.2s;
+  @media screen and (min-width: $bp-tablet) {
+    padding: 16px 32px;
+    font-size: 18px;
+  }
+  &:hover {
+    background-color: transparent;
+    color: var(--color-text-main);
+  }
+}

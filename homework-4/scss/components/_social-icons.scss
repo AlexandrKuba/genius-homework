@@ -1,0 +1,58 @@
+.social-icons {
+  display: none;
+  @media screen and (min-width: $bp-tablet) {
+    display: flex;
+    gap: 32px;
+    height: 32px;
+    align-items: center;
+  }
+  &--mobile {
+    display: flex;
+    gap: 16px;
+  }
+  &--footer {
+    @media screen and (min-width: $bp-tablet) {
+      max-height: 42px;
+      gap: 24px;
+    }
+  }
+  &--mobile-footer {
+    display: flex;
+    max-height: 32px;
+    gap: 20px;
+    justify-content: center;
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+  &__icon {
+    fill: var(--color-text-main);
+    height: 32px;
+    width: 32px;
+    transition: fill 0.2s;
+    &:hover {
+      fill: var(--color-text-accent);
+    }
+    &--footer {
+      fill: var(--color-light);
+      height: 42px;
+      width: 42px;
+      transition: fill 0.2s;
+      &:hover {
+        fill: var(--color-text-accent);
+      }
+    }
+    &--mobile-footer {
+      fill: var(--color-light);
+      height: 32px;
+      width: 32px;
+      transition: fill 0.2s;
+      &:hover {
+        fill: var(--color-text-accent);
+      }
+    }
+  }
+  &__item {
+    max-height: 32px;
+  }
+}

@@ -1,0 +1,54 @@
+.contacts {
+  &__body {
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+  &__contant {
+    background-image: url('../images/modal-bg.png');
+    background-size: cover;
+    background-color: var(--color-text-main);
+    padding: 42px 24px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 32px;
+    flex: 1 0 auto;
+    @media screen and (min-width: $bp-tablet) {
+      padding: 48px 56px;
+      flex: 0 0 420px;
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/modal-bg@2x.png');
+      background-size: cover;
+      background-color: var(--color-text-main);
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px 32px;
+    max-width: 1060px;
+    margin: 0 auto;
+    flex-direction: column-reverse;
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
+  }
+  &__map {
+    border: none;
+    flex: 1 0 auto;
+    height: 232px;
+    margin: 0 -20px;
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0;
+      width: 280px;
+      height: 492px;
+      border-radius: 32px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      width: 605px;
+      height: 492px;
+    }
+  }
+}
