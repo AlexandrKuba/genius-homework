@@ -4,3 +4,5 @@
 [Homework 4](https://alexandrkuba.github.io/genius-homework/homework-4/)<br><br>
 JS<br><br>
 [Homework js 1](https://alexandrkuba.github.io/genius-homework/hw-js-1/js/script.js)<br>
+[Homework js 2](https://alexandrkuba.github.io/genius-homework/hw-js-2/js/script.js)<br>
+[Homework js 3](https://alexandrkuba.github.io/genius-homework/hw-js-3/js/script.js)<br>
